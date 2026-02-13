@@ -1,0 +1,43 @@
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}">
+<meta property="og:description"
+    content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/22224438">
+<meta property="og:image:width" content="460">
+<meta property="og:image:height" content="460">
+<meta property="og:locale" content="{{ if eq .Site.Language.Lang " es-MX" }}es_MX{{ else }}en_US{{ end }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+{{ with .Site.Params.author }}
+<meta property="og:author" content="{{ . }}">{{ end }}
+{{ if .IsPage }}
+<meta property="article:author" content="{{ .Site.Params.author }}">
+<meta property="article:published_time" content="{{ .PublishDate.Format " 2006-01-02T15:04:05Z07:00" }}">
+<meta property="article:modified_time" content="{{ .Lastmod.Format " 2006-01-02T15:04:05Z07:00" }}">
+{{ end }}
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="{{ .Permalink }}">
+<meta name="twitter:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}">
+<meta name="twitter:description"
+    content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
+<meta name="twitter:image" content="https://avatars.githubusercontent.com/u/22224438">
+{{ with .Site.Params.social }}
+{{ range . }}
+{{ if eq .name "twitter" }}
+<meta name="twitter:site" content="@{{ path.Base .url }}">
+{{ end }}
+{{ end }}
+{{ end }}
+
+<meta name="author" content="{{ .Site.Params.author }}">
+{{ if .IsPage }}{{ with .Params.tags }}
+<meta name="keywords" content="{{ delimit . " , " }}">{{ end }}{{ end }}
+
+<meta name="theme-color" content="#1d1e20">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f5f5f5">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1d1e20">
+
+<meta name="fediverse:creator" content="@edfloreshz@hachyderm.io">
+</script>

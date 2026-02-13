@@ -63,6 +63,7 @@ languages:
     weight: 1
     title: Eduardo Flores
     params:
+      description: "Ingeniero de software viviendo en México"
       profileMode:
         subtitle: "Ingeniero de Software"
     menu:
@@ -86,6 +87,7 @@ languages:
     weight: 2
     title: Eduardo Flores
     params:
+      description: "Software engineer based in Mexico"
       profileMode:
         subtitle: "Software Engineer"
     menu:
