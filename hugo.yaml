@@ -1,0 +1,132 @@
+baseURL: "https://edfloreshz.dev"
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: true
+
+module:
+  imports:
+    - path: github.com/adityatelange/hugo-PaperMod
+    
+params:
+  author: "Eduardo Flores"
+  
+  profileMode:
+    enabled: true
+    imageUrl: "https://avatars.githubusercontent.com/u/22224438"
+    imageWidth: 200
+    imageHeight: 200
+  mainSections:
+    - posts
+  label:
+    text: "Eduardo Flores"
+    icon: /favicon/favicon.ico
+    iconHeight: 35
+  
+  # Theme settings
+  defaultTheme: auto
+  showReadingTime: true
+  showShareButtons: false
+  showPostNavLinks: true
+  showBreadCrumbs: false
+  showCodeCopyButtons: true
+  showWordCount: true
+  showRssButtonInSectionTermList: true
+  useHugoToc: true
+
+  # Social icons
+  socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/edfloreshz/"
+    - name: mastodon
+      url: "https://hachyderm.io/@edfloreshz"
+    - name: github
+      url: "https://github.com/edfloreshz"
+    - name: twitch
+      url: "https://www.twitch.tv/edfloreshz/about"
+    - name: matrix
+      url: "https://matrix.to/#/@edfloreshz:matrix.org"
+    - name: steam
+      url: "https://steamcommunity.com/id/edfloreshz/"
+    - name: signal
+      url: "https://signal.me/#eu/3m0zzE4BULMlZvUaXGc2XxraJORnH1rYZCML91y1NLp5cuZRU-JGrao3hDa2uUS3"
+    - name: reddit
+      url: "https://www.reddit.com/user/edfloreshz"
+    - name: discord
+      url: "https://discordapp.com/users/661062708267057180"
+
+taxonomies:
+  tag: tags
+
+languages:
+  es-MX:
+    languageName: "Español"
+    contentDir: content/es-MX
+    weight: 1
+    title: Eduardo Flores
+    params:
+      profileMode:
+        subtitle: "Ingeniero de Software"
+    menu:
+      main:
+        - name: Inicio
+          url: /
+          weight: 1
+        - name: Sobre mí
+          url: /about/
+          weight: 2
+        - name: Entradas
+          url: /posts/
+          weight: 3
+        - name: IA
+          url: /ai/
+          weight: 4
+        - name: Marca
+          url: https://brand.edfloreshz.dev
+          weight: 5
+
+  en:
+    languageName: "English"
+    contentDir: content/en
+    weight: 2
+    title: Eduardo Flores
+    params:
+      profileMode:
+        subtitle: "Software Engineer"
+    menu:
+      main:
+        - name: Home
+          url: /
+          weight: 1
+        - name: About me
+          url: /about/
+          weight: 2
+        - name: Posts
+          url: /posts/
+          weight: 3
+        - name: AI
+          url: /ai/
+          weight: 4
+        - name: Brand
+          url: https://brand.edfloreshz.dev
+          weight: 5
+markup:
+  highlight:
+    style: catppuccin-mocha
+    lineNos: true
+    noClasses: true
+
+# dracula
+# github-dark
+# nord
+# onedark
+# solarized-dark / solarized-dark256
+# gruvbox
+# doom-one / doom-one2
+# catppuccin-mocha / catppuccin-frappe / catppuccin-macchiato
+# tokyonight-night / tokyonight-storm / tokyonight-moon
+# kanagawa-wave / kanagawa-dragon
+# rose-pine / rose-pine-moon
+# aura-theme-dark / aura-theme-dark-soft
+# xcode-dark
+# paraiso-dark
+# native
+# vim
