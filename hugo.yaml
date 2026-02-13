@@ -79,9 +79,6 @@ languages:
         - name: IA
           url: /ai/
           weight: 4
-        - name: Marca
-          url: https://brand.edfloreshz.dev
-          weight: 5
 
   en:
     languageName: "English"
@@ -105,9 +102,6 @@ languages:
         - name: AI
           url: /ai/
           weight: 4
-        - name: Brand
-          url: https://brand.edfloreshz.dev
-          weight: 5
 markup:
   highlight:
     style: catppuccin-mocha
