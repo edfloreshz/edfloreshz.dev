@@ -2,7 +2,9 @@
 title: "About Me"
 ---
 
-I'm Eduardo Flores, a software engineer based in Mexico.
+Hey, I'm Eduardo Flores.
+
+I'm a software engineer by day, where I spend most of my time writing server code for a living. When I'm not doing that, I'm hacking on open-source projects and building things for fun.
 
 ## Pet
 
