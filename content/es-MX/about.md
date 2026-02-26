@@ -2,7 +2,9 @@
 title: "Sobre mí"
 ---
 
-Soy Eduardo Flores, ingeniero de software viviendo en México.
+Hola, soy Eduardo Flores.
+
+Soy ingeniero de software de día, donde paso la mayor parte de mi tiempo escribiendo código del lado del servidor. Cuando no estoy haciendo eso, estoy trabajando en proyectos de código abierto y construyendo cosas por diversión.
 
 ### Mascota 
 
