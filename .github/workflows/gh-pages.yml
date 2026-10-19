@@ -51,13 +51,13 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"          
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Copy extra files
+        run: cp -r .well-known CNAME public/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
-      - name: Artifacts
-        run: cp -r .well-known CNAME public
 
   # Deployment job
   deploy:
